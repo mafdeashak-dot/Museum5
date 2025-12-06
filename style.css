@@ -989,4 +989,15 @@ padding: 15px;
 .social-item:hover .name{
       opacity: 1; 
 transform: translateX(50px);
+
 }
+
+
+@media(max-width: 600px){
+    
+.footer-box{
+       
+margin: 50px;
+}
+}
+
