@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels List - Egypt Tourism</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    
+     
+        .hotels-section{
+            max-width:1200px;
+            margin:100px auto;
+            padding:20px;
+        }
+
+        .hotels-section h2{
+            text-align:center;
+            font-size:32px;
+            color:#b3a403;
+            margin-bottom:40px;
+        }
+
+        .hotels-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap:25px;
+        }
+
+        .hotel-card{
+            background:#fff;
+            border-radius:10px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.1);
+            overflow:hidden;
+            transition:0.3s;
+        }
+
+        .hotel-card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .hotel-card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .hotel-info{
+            padding:20px;
+        }
+
+        .hotel-info h3{
+            margin-bottom:10px;
+            color:#222;
+        }
+
+        .hotel-info p{
+            font-size:15px;
+            margin-bottom:15px;
+            color:#666;
+        }
+
+        .price{
+            font-size:18px;
+            font-weight:600;
+            color:#b3a403;
+            margin-bottom:15px;
+        }
+
+        .hotel-info a{
+            display:inline-block;
+            background:#b3a403;
+            padding:10px 20px;
+            border-radius:5px;
+            color:#fff;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        .hotel-info a:hover{
+            background:#edf034;
+            color:#111;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images.jpeg" >Egypt Tourism</div>
+
+    <nav>
+        <ul>
+             <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hotel.html" class="active">Hotel</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="ticket.html">Ticket</a></li>
+            <li><a href="review.html">review</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+       <div class="menu-toggle">&#9776;</div>
+
+</header>
+
+
+<section class="hotels-section">
+    <h2>Top Hotels in Egypt</h2>
+
+    <div class="hotels-container">
+
+        <div class="hotel-card">
+            <img src="hotel1.webp" alt="">
+            <div class="hotel-info">
+                <h3>Marriott Hotel Cairo</h3>
+                <p>Overlooking the Nile River, offering luxury rooms and outstanding service.</p>
+                <div class="price">$120 / night</div>
+                <a href="hotel.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="hotel-card" id="hotel-card">
+            <img src="hotel2.jpg" alt="">
+            <div class="hotel-info">
+                <h3>Hilton Luxor Resort</h3>
+                <p>Peaceful resort in Luxor with stunning Nile views and amazing spa.</p>
+                <div class="price">$140 / night</div>
+                <a href="hotel.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <img src="hotel3.jpg" alt="">
+            <div class="hotel-info">
+                <h3>Steigenberger Pyramids</h3>
+                <p>Located near the Pyramids with modern rooms and a beautiful pool.</p>
+                <div class="price">$110 / night</div>
+                <a href="hotel.html">Book Now</a>
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <img src="hotel4.jpg" alt="">
+            <div class="hotel-info">
+                <h3>Four Seasons Nile Plaza</h3>
+                <p>One of Cairo’s most luxurious hotels with premium facilities.</p>
+                <div class="price">$250 / night</div>
+                <a href="hotel.html">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<a href="#hotel-card" class="scroll_up">⭡</a>
+
+
+
+
+
+<footer>
+<div class="footer-container">
+
+
+<div class="footer-box">
+<h3>Egypt Tourism</h3>
+<p>Discover the beauty of Egypt — history, culture, and unforgettable adventures.</p>
+</div>
+
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>   <li><a href="index.html"></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="ticket.html">Ticket</a></li>
+            <li><a href="review.html">review</a></li>
+            <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+
+<div class="footer-box">
+<h3>Contact Us</h3>
+<p>Email: support@egypttourism.com</p>
+<p>Phone: +20 100 000 0000</p>
+<p>Address: Cairo, Egypt</p>
+</div>
+
+
+<div class="footer-box">
+<h3>Follow Us</h3>
+<div class="social">
+<div class="social-item">
+<img src="facebook.png" alt="Facebook">
+<div class="name" style="color: blue;">Facebook</div>
+</div>
+
+
+<div class="social-item">
+<img src="telegram.png" alt="Telegram">
+<div class="name" style="color: aqua;">Telegram</div>
+</div>
+
+
+<div class="social-item">
+<img src="twitter.webp" alt="Twitter">
+<div class="name" style="color: rgb(0, 0, 0);">Twitter</div>
+</div>
+
+
+<div class="social-item">
+<img src="whatsapp.webp" alt="Whatsapp">
+<div class="name" style="color: rgb(0, 255, 17);">Whatsapp</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+© Egypt Tourism 2025 . Developed by @Igris.
+</div>
+</footer>
+
+
+<script src="javascript.js"></script> 
+
+
+
+</body>
+</html>
