@@ -254,25 +254,7 @@ transform: translateY(-10px);
     transition: 4s;
 }
 
-/* توزيع الصور في دائرة */
-.spinner img:nth-child(1) { transform: rotateY(0deg)   translateZ(300px); }
-.spinner img:nth-child(2) { transform: rotateY(60deg)  translateZ(300px); }
-.spinner img:nth-child(3) { transform: rotateY(120deg) translateZ(300px); }
-.spinner img:nth-child(4) { transform: rotateY(180deg) translateZ(300px); }
-.spinner img:nth-child(5) { transform: rotateY(240deg) translateZ(300px); }
-.spinner img:nth-child(6) { transform: rotateY(300deg) translateZ(300px); }
 
-/* الحركة */
-@keyframes rotate {
-    from { transform: rotateY(0deg); }
-    to   { transform: rotateY(360deg); }
-}
-
-/* توقف عند hover */
-.spinner:hover {
-    cursor: pointer;
-    animation-play-state: paused;
-}
 
 
 
@@ -997,8 +979,9 @@ transform: translateX(50px);
     
 .footer-box{
        
-margin: 50px;
+margin: 40px;
 }
 }
+
 
 
